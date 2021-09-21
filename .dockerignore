@@ -1,0 +1,5 @@
+.venv
+ddos/.env
+ddos/__pycache__
+docker-compose.override.yml
+xxx-base
