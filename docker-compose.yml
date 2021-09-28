@@ -6,4 +6,4 @@ services:
       context: .
       dockerfile: ./Dockerfile
     image: python-troll
-    command: gunicorn -b 0.0.0.0:$PORT wsgi:server --chdir /app/ddos
+    command: gunicorn -b 0.0.0.0:$PORT wsgi:server --chdir /app/dos

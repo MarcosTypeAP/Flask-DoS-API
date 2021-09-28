@@ -46,8 +46,8 @@ def get_last_obj():
     db = open_db()
     query = db.execute("""
         SELECT end_time, start_time, n
-        FROM ddos 
-        WHERE id = (SELECT MAX(id) FROM ddos)
+        FROM dos 
+        WHERE id = (SELECT MAX(id) FROM dos)
     """).fetchone()
     if query:
         end_time = int(query[0])

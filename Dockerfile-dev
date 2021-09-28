@@ -28,4 +28,4 @@ RUN sqlite3 /app/db.sqlite3 < /app/reset-db.sql
 
 WORKDIR /app
 
-CMD gunicorn -b 0.0.0.0:$PORT wsgi:server --chdir /app/ddos
+CMD gunicorn -b 0.0.0.0:$PORT wsgi:server --chdir /app/dos
